@@ -1,0 +1,309 @@
+body{
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  color: #505962;
+/*  background-color: black;*/
+}
+.navbar{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  background: rgba(0,0,0,.6)!important;
+}
+.navbar-brand img{
+  height: 2rem;
+}
+.navbar-nav li{
+  padding-right: .7rem;
+}
+.navbar-dark .navbar-nav .nav-link{
+  color:white;
+  padding-top: .8rem;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+  color: #1ebba3;
+}
+.carousel-item{
+  height: 100vh;
+
+}
+.narrow{
+  widht:75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.btn-md{
+  border-width: medium;
+  border-radius: 0;
+  padding: .6rem 1.1rem;
+  text-transform: uppercase;
+  margin: 1rem;
+}
+.offset:before{
+  height: 3.8rem;
+  margin-top: -3.8rem;
+  content: "";
+  display: block;
+}
+.carousel-caption{
+  position: absolute;
+  top: 38%;
+  text-transform: uppercase;
+}
+.carousel-caption h1{
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: .3rem;
+  width: 100%;
+  right: 0;
+  left: 0;
+  text-shadow: .1rem .1rem .8rem black;
+  padding-bottom: 1rem;
+}
+.carousel-caption h5{
+  color:white;
+  text-align: center;
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: .3rem;
+  width: 100%;
+  right: 0;
+  left: 0;
+  text-shadow: .1rem .1rem .8rem black;
+  padding-bottom: 1rem;
+}
+.carousel-caption h3{
+  font-size: 2rem;
+  text-shadow: .1rem .1rem .5rem black;
+  padding-bottom: 1.6rem;
+}
+.services{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+}
+.s-heading{
+        text-align: center;
+}
+.s-heading h1{
+        color: #576975;
+        font-size: 3rem;
+        font-family: sans-serif;
+        font-weight: 400;
+        letter-spacing: 1px;
+        margin: 0px;
+}
+.s-heading p{
+        color: rgba(85,105,117,0.6);
+        font-size: 1rem;
+        margin: 5 px;
+        text-align: center;
+}
+.s-box-container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.s-box img{
+        height: 75px;
+}
+.s-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        width: 300px;
+        height: 400px;
+        padding: 20px 25px;
+        box-sizing: border-box;
+        margin: 30px;
+        position: relative;
+        /* box-shadow: 2px 2px 30px rgba(0,0,0,0.2); */
+}
+.s-box h1{
+        color: #576975;
+        letter-spacing: 1px;
+        font-size: 1.5rem;
+        font-family: sans-serif;
+        margin-bottom: 8px;
+        margin-top: 4px;
+}
+.s-box p{
+        color:rgba(85,105,117,0.9);
+        text-align: center;
+        font-family:Arial, Helvetica, sans-serif;
+}
+.s-btn{
+        width: 140px;
+        height: 40px;
+        border-radius: 20px;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #576975;
+        margin-top: 10px;
+}
+.s-box:hover{
+        box-shadow: 2px 2px 30px rgba(0,0,0,0.08);
+        transition: all ease 0.3s;
+}
+.s-btn:hover{
+        background-color: red;
+        border: 1px solid red;
+        color: #ffffff;
+        transition: all ease 0.3s;
+
+}
+.bar{
+        width: 100px;
+        height: 6px;
+        position: absolute;
+        left: 50%;
+        top: 0px;
+        transform: translateX(-50%);
+        background-color: red;
+        border-radius: 0px 0px 10px 10px ;
+        display: none;
+        animation: bar 0.5s;
+}
+.s-box:hover .bar{
+        display: block;
+}
+@keyframes bar{
+        0%{
+                width: 0px;
+        }
+        100%{
+                width: 100px;
+        }
+}
+
+.btn-lg{
+  position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+.btn-lg:hover {
+  background-color: black;
+  color: white;
+}
+.jumbotron{
+  border-radius: 0;
+  padding: 3rem 0 2rem;
+  margin-bottom: 0;
+}
+h3.heading{
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 1.9rem;
+}
+.heading-underline{
+  width: 3rem;
+  height: .2rem;
+  background-color: #1ebba3;
+  margin: 0 auto 2rem
+}
+.portfolio img{
+  max-width: 100%;
+  transition: transform .5s ease;
+}
+.row.no-padding [class*=col-] {
+  padding:0;
+}
+.portfolio img:hover{
+  transform: scale(1.1);
+  cursor: zoom-in;
+}
+.portfolio{
+  overflow: hidden;
+}
+.card{
+  margin: 2rem;
+}
+footer{
+  background-color: #40474e;
+  color: white;
+  padding: 2rem 0 3rem;
+  margin-top: 1rem;
+}
+footer img{
+  height: 3rem;
+  margin: 1.5rem 0;
+}
+footer a{
+  color: white;
+}
+footer svg.svg-inline--fa{
+  font-size: 1.6rem;
+  margin: 1.2rem .5rem 0 0;
+}
+footer svg.svg-inline--fa:hover{
+color: #1ebba3;
+}
+hr.socket{
+  border-top: .2rem solid #666b71;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .carousel-caption h1{
+    font-size: 2.3rem;
+    letter-spacing: .15rem;
+    padding-bottom: .5rem;
+  }
+  .carousel-caption h3{
+    font-size: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+  .btn-lg{
+    font-size: 1rem;
+  }
+  .narrow h1{
+    font-size: 1.5rem;
+  }
+}
+.btn-lg{
+  border-width: medium;
+  border-radius: 0;
+  font-size: 1.1rem;
+  padding-top:1.5rem;
+}
+
+/*============= COURSE SECTION =============*/
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/

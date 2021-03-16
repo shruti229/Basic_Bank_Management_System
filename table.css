@@ -1,0 +1,44 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+h2{
+	font-size: 40px;
+}
+table{
+letter-spacing: 1.2px;
+}
+th,td{
+  border:1px solid #f2f2f2;
+   padding:8px 30px;
+  text-align:center;
+  opacity:0.9;
+  /*color:#04FB73 ;*/
+}
+th{
+  text-transform:uppercase;
+  font-weight:500;
+}
+td
+{
+    font-size:13px;
+    color: red;
+    font-weight: bold;
+}
+.text-center{
+  color: black;
+  font-weight: bolder;
+}
+
+button{
+	border:none;
+	background: #d9d9d9;
+    transition: 1s;
+}
+@media only screen and (orientation: portrait){
+	*{
+		letter-spacing: 1px;
+	}
+}
